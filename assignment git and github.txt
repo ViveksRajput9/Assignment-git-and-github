@@ -1,0 +1,48 @@
+how to check if git is available in your system ?
+
+Check If Git is Installed
+You can check whether Git is installed and what version you are using by opening up a terminal window in Linux or Mac,
+or a command prompt window in Windows, and typing the following command: git --version.
+
+how to initialize a new git repository ?
+
+Create a new repository on GitHub.com. ...
+Open TerminalTerminalGit Bash.
+Change the current working directory to your local project.
+Use the init command to initialize the local directory as a Git repository. ...
+Add the files in your new local repository. ...
+Commit the files that you've staged in your local repository.
+
+how to tell git about your name and email ?
+
+1st use git command for name 
+git config --global user.name " enter username "
+2nd use git command for email 
+git config --global user.email " enter email "
+3rd check your username or email in config added or not 
+git config --list
+This method use for tell name and email in git bash
+
+how to add a file to the staging area ?
+
+use this git command for working area to staging area 
+git add .  <-- This command use for all file in your working area
+git add file name (This is use for single file )
+
+how to remove a file from the staging area?
+Using the git rm <file> --cached method
+
+how to make a commit ?
+use  git commit -m " write a file name "
+
+how to send your changes to a remote repository ?
+
+use this command for send your changes to a remote repository
+git push
+
+what is the difference between clone and pull?
+clone 
+clone is used to copy all files from other developer github a/c to our local repository
+
+pull 
+pull is used to get all files from github a/c
