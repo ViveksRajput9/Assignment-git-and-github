@@ -1,0 +1,36 @@
+What is programming language ?
+A programming language is a set of instructions that a computer can understand and execute.
+It is a way for humans to communicate with computers by writing code that tells the computer what to do.
+There are many different programming languages, each with its own syntax and features, 
+but they all serve the same basic purpose of allowing people to create software and automate tasks.
+
+Why do we need a programming language?
+We need programming languages because they allow us to give instructions to computers in a way
+that is understandable by both humans and machines.
+Without programming languages, we would not be able to create software or automate tasks.
+
+what are the features of java?
+Java is a popular programming language with many features, including platform independence,
+object-oriented programming, automatic memory management, strong type checking, multi-threading,
+and rich libraries.It is widely used for developing a variety of applications and software.
+
+what is an object ?
+In programming, an object is an instance of a class that defines the characteristics and behavior
+of that object. Objects allow developers to encapsulate data and behavior into a single entity, 
+making it easier to manage and manipulate. They are a fundamental concept in
+object-oriented programming and enable reusable code that can be adapted to different situations.
+
+what is a class?
+In programming, a class is a blueprint or template that defines a set of properties and methods
+common to all objects of that class. It provides a way to organize and structure code and allows
+developers to create reusable code that can be easily adapted to different situations. Classes are
+important in object-oriented programming because they enable encapsulation of data and behavior,
+making code easier to manage and maintain. By creating instances of a class, developers
+can create multiple objects with their own unique values for the properties defined in the class.
+
+Explain about the main() method in java ?
+In Java, main() is the entry point for a program, where the execution begins. It is a required
+method in all Java programs, and it must be declared as public, static, and void. The method takes
+an array of String objects as a parameter and can be used to pass command-line arguments to the
+program.
+
