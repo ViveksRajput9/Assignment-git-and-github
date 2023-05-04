@@ -1,0 +1,359 @@
+Q.1  Write a Program(WAP) to print Alphabets A,B,C,D,E,F,G,H, using pattern programming logic 
+ char i, j;
+ for(i='A';i<='H';i++){
+            for(j='A';j<=i;j++){
+                System.out.print(" "+j);
+            }
+            System.out.println();
+        }
+        
+Q.2 Write a program to print triangle using star pattern programming logic         
+ 
+ int i,j;
+ for(i=1;i<=10;i++){
+            for(j=1;j<=i;j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+Q.3 WAP to Print
+
+ int k=14;
+        for(i=1;i<=k;i++){
+            for(j=1;j<=k;j++){
+                if(i+j<=(k+2)/2||j==1||j==k||i==k||j-i>=k/2){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        
+Q.4  Write a prgram to print PW SKILLS using pattern programming logic .
+
+public class pw_skill {
+    public static void main(String args[]){
+        int i,j;
+        //  P star pattern logic
+        for(i=1;i<=10;i++){
+            for(j=1;j<=8;j++){
+                if(j==1||i==1&&j<=5||i==5&&j<=5||i==2&&j==8||i==3&&j==8||i==4&&j==8) {
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+
+        // W star pattern logic
+
+        for(i=1;i<6;i++){
+            for(j=1;j<=10;j++){
+                if(j-i==5||j+i==6||j==1||j==10){
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // S star pattern logic
+
+        for(i=1;i<=9;i++){
+            for(j=1;j<=6;j++){
+                if(i==1||i==5||i>=5&&j==6||j==1&&i<=5||i==9){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // K star pattern logic
+        for(i=1;i<=9;i++){
+            for(j=1;j<=9;j++){
+                if(j==1||j+i==7||i-j==3){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+
+
+        // I star pattern logic
+        for(i=1;i<=9;i++){
+            for(j=1;j<=9;j++){
+                if(i==1||i==9||j==5){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        // L star pattern logic
+
+        for(i=1;i<=9;i++){
+            for(j=1;j<=12;j++){
+                if(j==1||i==9){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+
+
+        // L star pattern logic
+
+        for(i=1;i<=9;i++){
+            for(j=1;j<=12;j++){
+                if(j==1||i==9){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+    }
+}
+
+Q.5 Write a program to print your FULL NAME using pattern programming logic
+
+public class  vivek_rajput_Star_pattern{
+
+    public static void main(String[] args) {
+        int a, v, d;
+        a = 10;
+
+//    Print V pattern code
+        System.out.println();
+        System.out.println();
+
+        for (int k = 1; k <= a; k++) {
+            for (int i = 1; i <= 22; i++) {
+                if (i == k || i + k == 22 - 1) {
+                    System.out.print("$*$");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+
+        }
+        System.out.println();
+        System.out.println();
+
+        // Print I pattern code
+
+        for (v = 1; v <= a; v++) {
+            System.out.print("       ");
+            for (int s = 1; s <= a; s++) {
+                if (v == 1 || s == 5 || v == 10) {
+                    System.out.print("$");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+
+//        print V star pattern code
+
+        for (int k = 1; k <= a; k++) {
+            for (int i = 1; i <= 22; i++) {
+                if (i == k || i + k == 22 - 1) {
+                    System.out.print("$*$");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+        }
+        System.out.println();
+        System.out.println();
+
+        // print E star pattern code
+
+        for (v = 1; v <= 11; v++) {
+            System.out.print("     ");
+            for (int n = 1; n <= 5; n++) {
+                if (v == 1 || v == 11 || v == 6 || n == 1) {
+                    System.out.print("$*$");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        // Print K star pattern code
+        for (v = 1; v <= a; v++) {
+            System.out.print("     ");
+            for (d = 1; d <= 10; d++) {
+                if (d == 1 || v + d == 8 - 1 || d + 4 == v) {
+                    System.out.print("$*$");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        // print R star pattern code
+
+        for (v = 1; v <= a; v++) {
+            System.out.print("     ");
+            for (d = 1; d <= 6; d++) {
+                if (d == 1 || v + d - 3 == 6 - 1 || v == 1 && d == 3 || v == 1 && d == 4 || d + 4 == v) {
+                    System.out.print("$*$");
+                } else if (v == 3 && d == 4 || v == 4 && d == 3) {
+
+                    System.out.print("     ");
+                } else if (v == 2 && d == 3 || v == 1 && d == 2) {
+
+                    System.out.print(" ");
+                } else if (v == 1 && d == 5) {
+                    System.out.print("$*");
+
+                } else {
+                    System.out.print("   ");
+
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+
+        // Print A star pattern code
+        for (v = 1; v <= 10; v++) {
+            System.out.print("   ");
+            for (d = 1; d <= 20; d++) {
+                if (d + v == 11 || v == v && d == 9 + v) {
+                    System.out.print("$*$");
+                } else if (v == 1 && d == 3) {
+                    System.out.print("  ");
+                } else if (v == 6 && d >=7&&d <=13) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println();
+
+        // Print J star pattern code
+
+        for (v = 1; v <= 10; v++) {
+            System.out.print("    ");
+            for (d = 1; d <= 7; d++) {
+                if (v == 1 || v <= 10 && d == 4 || v == 10 && d == 2 || v == 9 && d == 1) {
+                    System.out.print("$*$");
+
+                } else if (v == 10 && d == 3) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+
+        // Print P star print pattern code
+
+        for (v = 1; v <= a; v++) {
+            System.out.print("     ");
+            for (d = 1; d <= 10; d++) {
+                if (d == 1 || v == 1 && d == 2 || v == 1 && d == 4 || v == 5 && d == 2 || v == 5 && d == 3 || v == 2 && d == 5 || v == 3 && d == 6 || v == 4 && d == 5) {
+
+                    System.out.print("$*$");
+                } else if (v == 1 && d == 3) {
+                    System.out.print(" ");
+
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+
+        // Print U star pattern code
+
+        for (v = 1; v <= 8; v++) {
+            for (d = 1; d <= 10; d++) {
+                if (v == 8 && d >= 2 && d <= 6 || d == 1 && v <= 7 || d == 10 && v <= 7) {
+                    System.out.print("$*$");
+                } else if (d == 4 || d == 8 || d == 7) {
+                    System.out.print(" ");
+
+                } else {
+
+                    System.out.print("  ");
+                }
+
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        // Print T star pattern code
+        for (v = 1; v <= a; v++) {
+            for (d = 1; d <= 7; d++) {
+                if (v == 1 || d == 5) {
+                    System.out.print(" $*$");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+}
+
