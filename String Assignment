@@ -1,0 +1,151 @@
+Q.1  what is mutable string in java explain with an example
+Ans :-    A mutable string in Java refers to a string whose value can be changed or modified after it has been created. In Java, the String class is immutable, meaning once a String object is created, its value cannot be changed. However, Java provides StringBuilder and StringBuffer classes that represent mutable strings
+
+mutable string Example :- 
+
+public class stringBuilder {
+	
+	
+ public static void main(String arg[]) {
+	StringBuilder name = new StringBuilder("vivek");
+	System.out.println(name);
+	name.insert(5," Singh rajput");
+	System.out.println(name);
+	
+	name.replace(6,11,"kumar");
+	System.out.println(name);
+
+	name.delete(5,11);
+	System.out.println(name);
+ }
+}
+
+output:-
+vivek
+vivek Singh rajput
+vivek kumar rajput
+vivek rajput
+
+
+
+public class stringBuffer{
+	
+	
+ public static void main(String arg[]) {
+	 
+	StringBuffer name = new StringBuffer("vivek");
+	System.out.println(name);
+	name.insert(5," Singh rajput");
+	System.out.println(name);
+	
+	name.replace(6,11,"kumar");
+	System.out.println(name);
+
+	name.delete(5,11);
+	System.out.println(name);
+ }
+}
+output:- 
+
+vivek
+vivek Singh rajput
+vivek kumar rajput
+vivek rajput
+
+
+
+
+immutable string Example:-
+
+
+public class string{
+	
+	
+ public static void main(String arg[]) {
+	 
+	String name = "vivek";
+	System.out.println(name);
+	name.insert(5," Singh rajput");
+
+if developer try to modify immutable String this error can show 
+
+output:-	Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The method insert(int, String) is undefined for the type String
+
+	at stringBuilder.main(stringBuilder.java:9)
+
+
+Q.2 WAP to reverse a String
+
+
+public class reverse_string{
+	
+	
+ public static void main(String arg[]) {
+	StringBuilder name = new StringBuilder("PWSKILLS");
+
+	
+	name.reverse();
+	System.out.println(name);
+
+ }
+}
+
+output:-  sllikswp
+
+Q.3  WAP to reverse a sentence while preserving the position 
+
+public class reversestring {
+	
+	public static void main(String ar[]) {
+		String name = ("Think Twice");
+		String reverse_name = reverseWord(name);
+		System.out.print(reverse_name);
+	}
+	public static String reverseWord(String name) {
+		String[] words = name.split(" ");
+		StringBuilder reverseString = new StringBuilder();
+		for(String word : words) {
+			StringBuilder reversedword = new StringBuilder(word);
+			reverseString.append(reversedword.reverse().toString()).append(" ");
+		}
+		return reverseString.toString().trim().toLowerCase();
+		
+	}
+}
+
+output:- kniht eciwt
+
+Q.4  WAP to sort a String Alphabetically
+
+package practice;
+
+public class sortAlphabet1 {
+    public static void main(String[] args) {
+        String input = "PWSKILLSA";
+        String output = sortStringAlphabetically(input);
+        System.out.println("Input: " + input);
+        System.out.println("Output: " + output);
+    }
+
+    public static String sortStringAlphabetically(String s) {
+        char[] chars = s.toCharArray();
+        // Bubble sort implementation
+        for (int i = 0; i < chars.length - 1; i++) {
+            for (int j = 0; j < chars.length - 1 - i; j++) {
+                if (chars[j] > chars[j + 1]) {
+                    // Swap chars[j] and chars[j + 1]
+                    char temp = chars[j];
+                    chars[j] = chars[j + 1];
+                    chars[j + 1] = temp;
+                }
+            }
+        }
+        return new String(chars);
+    }
+}
+
+output:-  
+
+Input: PWSKILLSA
+Output: AIKLLPSSW
