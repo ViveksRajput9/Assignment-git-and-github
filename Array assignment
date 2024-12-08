@@ -1,0 +1,29 @@
+Q.1 What is the default value of Array for different data types?
+Ans. integer = 0
+     string = null
+     floating num = 0.0
+     Boolean = false
+     character = null	
+Q.2 Can you pass the negative number in Array size?
+Ans. no 
+Q.3  Where does Array stored in JVM memory ?
+Ans. if create using 
+        int array[] = new Int[5];
+         then this in heap memory 
+     else 
+          int array[] = {10,4,25,35,7,85,5};
+          this in stack memory 
+Q.4 what are the disadvantages of Array?
+Ans. fixed size 
+     Array store only same type of data 
+     no Built in methods for operations like searching , sorting resizing 
+Q.5 what is an anonymous Array in java ? Give an example ?
+Ans.  anonymous Array that created without assigned to a variable it use only for single time in method argument 
+Q.6 what are the different way to traverse an array in java ?
+Ans.  there are three way to traverse an array 
+      using while loop , for loop , Foreach loop
+      for(int i:arr){
+System.out.println(i);
+}
+
+
